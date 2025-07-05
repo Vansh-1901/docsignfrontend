@@ -1,102 +1,101 @@
-# 🖋️ DOC_SIGN – Digital Document Signing App
+# 🖋️ DOCSIGNAPP – Digital Document Signing Platform
 
-DOC_SIGN is a full-stack web application built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) that allows users to **sign PDF documents online** with two modes: **Normal Signature** and **Sign Pad**. It offers a seamless and user-friendly experience for uploading, signing, and saving documents with drag-and-drop functionality to place the signature wherever needed.
+**DOCSIGNAPP** is a full-stack web application built by **Vansh Gupta**, a B.Tech 2nd Year student, using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. The platform allows users to digitally sign PDF documents through a smooth and intuitive interface that supports both **typed** and **drawn** signatures.
 
 ---
 
 ## 🔗 Live Demo
 
-> *Coming soon or Add your deployment link here*
+> Coming Soon
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **Authentication**
-  - User Signup & Login
-  - JWT-based session handling
+### 🔐 Authentication
 
-- 📄 **PDF Upload**
-  - Upload any PDF file to sign
+- Secure user registration and login
+- JWT-based session management
 
-- ✍️ **Two Types of Signatures**
-  - **Normal Sign**: Type your name and select from multiple fonts
-  - **Draw Sign**: Draw your signature using a digital pad
+### 📄 PDF Upload
 
-- 🖱️ **Drag and Position Signature**
-  - After creating your signature, **drag and place it anywhere** on the document as per your choice
+- Upload and preview any PDF file for signing
 
-- 💾 **Save Signed PDF**
-  - Download or save the document with the signature embedded
+### ✍️ Signature Modes
 
-- 📱 **Responsive UI**
-  - Optimized for both desktop and mobile views with a clean, modern look
+- **Typed Signature**: Type your name, choose font style, and color
+- **Drawn Signature**: Draw your signature using a digital canvas
+
+### 🖱️ Drag-and-Drop Placement
+
+- Drag and place your signature freely anywhere on the PDF
+
+### 💾 Save Final Document
+
+- Download the signed PDF with embedded signature
+- Finalized using `pdf-lib` for precise embedding
+
+### 📜 Audit & History (Optional Future Feature)
+
+- Track signing activity for transparency and trust
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend        | Backend         | Database       | Others                   |
-|----------------|-----------------|----------------|--------------------------|
-| React.js       | Node.js         | MongoDB Atlas  | JWT for Auth             |
-| Tailwind CSS   | Express.js      | Mongoose ORM   | File handling with Multer|
-| React-PDF      |                 |                | HTML2Canvas & jsPDF      |
+| Frontend     | Backend    | Database      | Additional Tools             |
+| ------------ | ---------- | ------------- | ---------------------------- |
+| React.js     | Node.js    | MongoDB Atlas | JWT for Authentication       |
+| Tailwind CSS | Express.js | Mongoose      | Multer for File Uploads      |
+| React-PDF    |            |               | pdf-lib for PDF manipulation |
 
 ---
 
-## 📷 Screenshots
+## 📁 Project Structure
 
-| Login | 
+doc_sign/
+├── client/ # React Frontend
+│ └── src/
+│ ├── components/
+│ ├── pages/
+│ └── utils/
+├── server/ # Node.js Backend
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ └── middleware/
+└── README.md
 
-| ![Login](./screenshots/login.png) | 
-
-| Signup |
-![Signup](./screenshots/signup.png) |
-
-| Upload PDF | 
-| ![Upload](./screenshots/uploadPdf.png) |
-
-| Signature Option |
-| ![Signature Option](./screenshots/signing.png) |
-
-| Normal Signature Option |
-| ![Normal Signature Option](./screenshots/NormalSign.png) |
-
-| Signature Pad Option |
-| ![Signature Pad Option](./screenshots/SignPad.png) |
-
-| Signature Submit |
-| ![Signature Submit](./screenshots/signing.png) |
-
+---
 
 ## 🧑‍💻 Getting Started
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Sarthak9140/doc_sign.git
-cd doc_sign
+### 🔧 Prerequisites
 
-2. Setup Server
-cd server
-npm install
-npm start
+- Node.js & npm
+- MongoDB Atlas
 
-3. Setup Client
-cd client
-npm install
-npm start
-Make sure MongoDB is running and update your environment variables accordingly in both client/.env and server/.env.
+### 🛠 Installation Steps
 
-📂 Folder Structure
-doc_sign/
-├── client/         # React frontend
-│   └── src/
-│       └── components/
-├── index /         # Node.js backend
-│   └── routes/
-│   └── controllers/
-│   └── middlewares/
-│   └── models/
-✍️ Author
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Vansh-1901/Docsignapp2
+   cd doc_sign
+   	2.	Install Backend Dependencies
+   cd server
+   npm install
+   npm start
+   	3.	Install Frontend Dependencies
+   cd ../client
+   npm install
+   npm start
+   	4.	Environment Setup
+   	•	Create .env files in both client/ and server/ directories
+   	•	Example for server/.env:
+   ✍️ Author
+   ```
 
-Vansh
+Vansh Gupta
+B.Tech 2nd Year Student
+Developer & Builder of DOCSIGNAPP
+GitHub – Vansh-1901
